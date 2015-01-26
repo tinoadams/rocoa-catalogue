@@ -1,19 +1,12 @@
 package com.shop.catalogue.api
 
 import org.scalatra._
-
-// Swagger-specific Scalatra imports
 import org.scalatra.swagger._
-
-// JSON-related libraries
-import org.json4s.{DefaultFormats, Formats}
-
-// JSON handling support from Scalatra
 import org.scalatra.json._
-
+import org.json4s.{DefaultFormats, Formats}
 import com.shop.catalogue.categories._
 
-class CategoriesController(implicit val swagger: Swagger) extends ScalatraServlet with JacksonJsonSupport with SwaggerSupport  {
+class CategoriesController(val swagger: Swagger) extends ScalatraServlet with JacksonJsonSupport with SwaggerSupport  {
 
   // Sets up automatic case class to JSON output serialization, required by the JValueResult trait.
   protected implicit val jsonFormats: Formats = DefaultFormats
