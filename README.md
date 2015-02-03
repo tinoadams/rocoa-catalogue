@@ -8,7 +8,7 @@ Pre-requisite is that SBT (http://www.scala-sbt.org/release/tutorial/Setup.html)
 ## Build & Run ##
 
 ```sh
-$ sbt run
+$ sbt ~re-start
 ```
 
 ## Package & Run ##

@@ -27,3 +27,4 @@ libraryDependencies ++= Seq(
 
 resolvers += "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
+Revolver.settings
